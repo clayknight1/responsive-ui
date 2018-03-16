@@ -460,10 +460,12 @@ a:active {
   max-height: 250px
 }
 
+@media (min-width: 1264px) {
 #instagram-section .insta-pics {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
+  }
 }
 
 footer {
@@ -666,8 +668,7 @@ footer div:last-child {
       justify-self: center; */
 }
 
-
-@media screen and (max-width: 1264px) {
+@media screen and (max-width: 1264px) and (min-width: 681px){
   #instagram-section .insta-pics {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 350px 350px;
@@ -675,6 +676,19 @@ footer div:last-child {
     max-width: 900px;
     margin: 0 auto;
   }
+
+  @media screen and (max-width: 680px) {
+    #instagram-section .insta-pics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    #instagram-section .insta-pics img {
+      margin-top: 25px;
+    }
+  }
+
+
   /* #insta-pics img {
    height: 100%;
    width: auto;
